@@ -16,9 +16,10 @@ h2 {
 .number-btn {
   background-color: rgba(149, 158, 172, 0.1);
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px;
 }
 .number-btn:hover {
   background-color: rgba(149, 158, 172, 0.5);
@@ -33,7 +34,7 @@ p {
   font-weight: 400;
 }
 .sub-btn {
-  font-size: 12px;
+  font-size: 13px;
   background-color: rgba(149, 158, 172, 0.1);
   font-weight: 700;
   text-transform: uppercase;
@@ -41,17 +42,35 @@ p {
   transition: all 0.2s;
   /* vertical-align: middle; */
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 .sub-btn:hover {
-  font-size: 12px;
   background-color: #fff;
   color: hsl(25, 97%, 53%);
   font-weight: 700;
   text-transform: uppercase;
+  box-shadow: none;
 }
 
 .star-container {
   width: 40px;
   height: 40px;
+  background-color: rgba(149, 158, 172, 0.1);
+}
+
+.selection-description {
+  color: rgba(251, 116, 19, 0.8);
+  background-color: rgba(149, 158, 172, 0.1);
+}
+
+.sub-disabled {
+  font-size: 13px;
+  background-color: rgba(149, 158, 172, 0.1);
+  opacity: 0.3;
+  box-shadow: none;
+}
+.sub-disabled:hover {
+  font-size: 13px;
+  color: #fff;
   background-color: rgba(149, 158, 172, 0.1);
 }

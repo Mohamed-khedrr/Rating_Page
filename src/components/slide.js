@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Slide = () => {
     let submitted = useSelector(state => state.submission);
+    let rating = useSelector(state => state.rating)
     const dispatch = useDispatch();
 
     return (
@@ -20,7 +21,7 @@ const Slide = () => {
                 <NumberButton number={4} />
                 <NumberButton number={5} />
             </div>
-            <button onClick={() => dispatch(isSubmitted(true))} className='sub-btn rounded-pill  border-0 mt-3'>Submit</button>
+            <button onClick={() => dispatch(isSubmitted(true))} disabled={!rating} className={`sub-btn rounded-pill  border-0 mt-3 ${!rating ? 'sub-disabled' : ''}`}>Submit</button>
         </>
     )
 }
